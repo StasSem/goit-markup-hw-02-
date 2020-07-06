@@ -1,4 +1,96 @@
 /*  
+головний фон - #FFFFFF 
+вторичний фон - #F5F4FA 
+акцент фон -  #2196F3
 
+колир заголовки тексту - #212121
+головний колір тексту - #757575
+
+лого колір : web - #2196F3  studio - #000000
+
+кнопка колір - #2196F3 ; #FFFFFF
 
 */
+
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-white-color);
+}
+/* Header!!! */
+/* Logo */
+
+.logo .logo-blue {
+  color: #2196f3;
+}
+
+.logo .logo-black {
+  color: #000000;
+}
+
+/* Navigation */
+
+.list-nav .item-nav {
+  color: var(--title-text-color);
+}
+.list-nav .item-nav:hover,
+.list-nav .item-nav:focus {
+  color: #2196f3;
+}
+
+.communication .phone-number,
+.communication .mail {
+  color: var(--primary-text-color);
+}
+
+.communication .mail:hover,
+.communication .mail:focus {
+  color: #2196f3;
+}
+
+.communication .phone-number:hover,
+.communication .phone-number:focus {
+  color: #2196f3;
+}
+
+/* Hero  */
+
+.hero {
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Studio quality */
+.item-quality {
+  background-color: var(--secondary-color);
+}
+
+/* What does a web studio do? */
+.subtitle-bgr {
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Our Team */
+.our-team {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  background-color: #2f303a;
+}
