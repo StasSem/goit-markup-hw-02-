@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <!---->
+    <!--Шапка Сайта-->
     <header>
       <nav>
         <a href="/" class="logo"
           ><span class="logo-blue">Web</span>
           <span class="logo-black">Studio</span>
         </a>
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="list-nav">
+          <li><a href="./index.html" class="item-nav">Студия</a></li>
+          <li><a href="./portfolio.html" class="item-nav">Портфолио</a></li>
+          <li><a href="" class="item-nav">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="communication">
           <li>
-            <a href="mailto:info@devstudio.com"
+            <a href="mailto:info@devstudio.com" class="mail"
               ><img
                 src="./images/mail.svg"
                 alt="Значок емейла "
@@ -30,8 +32,8 @@
             >
           </li>
           <li>
-            <a href="tel:+380961111111">
-              <img src="./images/smartphone.svg" alt="Значок телефона " />+38
+            <a href="tel:+380961111111" class="phone-number"
+              ><img src="./images/smartphone.svg" alt="Значок телефона " />+38
               096 111 11 11</a
             >
           </li>
@@ -41,111 +43,137 @@
     <main>
       <!--Проекты-->
       <section>
-        <h1>Проекты</h1>
-        <ul>
-          <li><a href=""></a>Все</li>
-          <li><a href=""></a>Веб-сайты</li>
-          <li><a href=""></a>Приложения</li>
-          <li><a href=""></a>Дизайн</li>
-          <li><a href=""></a>Маркетинг</li>
+        <h1 class="project">Проекты</h1>
+        <ul class="project-list">
+          <li><button class="project-item btn" type="button">Все</button></li>
+          <li>
+            <button class="project-item btn" type="button">Веб-сайты</button>
+          </li>
+          <li>
+            <button class="project-item btn" type="button">Приложения</button>
+          </li>
+          <li>
+            <button class="project-item btn" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="project-item btn" type="button">Маркетинг</button>
+          </li>
         </ul>
-        <ul>
-          <li>
-            <img
-              src="/images/technokryak.jpg"
-              alt="Ноутбук з відкрітими биографіями "
-            /><a href=""></a>
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
-            <p>
-              Технокряк это современная площадка распространения коронавируса.
-              Компании используют эту платформу для цифрового шпионажа и атак на
-              защищённые сервера конкурентов.
-            </p>
+        <ul class="example-list">
+          <li class="example-item">
+            <a href="">
+              <img
+                src="/images/technokryak.jpg"
+                alt="Ноутбук з відкрітими биографіями "
+              />
+              <h2 class="example-title">Технокряк</h2>
+              <p class="example-text">Веб-сайт</p>
+              <p>
+                Технокряк это современная площадка распространения коронавируса.
+                Компании используют эту платформу для цифрового шпионажа и атак
+                на защищённые сервера конкурентов.
+              </p>
+            </a>
           </li>
           <li>
-            <img src="/images/basketball.jpg" alt="Баскетболісти" /><a
-              href=""
-            ></a>
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <a href="">
+              <img src="/images/basketball.jpg" alt="Баскетболісти" />
+              <h2 class="example-title">Постер New Orlean vs Golden Star</h2>
+              <p class="example-text">Дизайн</p>
+            </a>
           </li>
           <li>
-            <img src="/images/logofood.jpg" alt="Логотип ресторану" /><a
-              href=""
-            ></a>
-            <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
+            <a href="">
+              <img src="/images/logofood.jpg" alt="Логотип ресторану" />
+              <h2 class="example-title">Ресторан Seafood</h2>
+              <p>Приложение</p>
+            </a>
           </li>
           <li>
-            <img src="/images/headphone.jpg" alt="Навушники" /><a href=""></a>
-            <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
+            <a href="">
+              <img src="/images/headphone.jpg" alt="Навушники" />
+              <h2 class="example-title">Проект Prime</h2>
+              <p class="example-text">Маркетинг</p>
+            </a>
           </li>
           <li>
-            <img src="/images/twobox.jpg" alt="Коробки" /><a href=""></a>
-            <h2>Проект Boxes</h2>
-            <p>Приложение</p>
+            <a href="">
+              <img src="/images/twobox.jpg" alt="Коробки" />
+              <h2 class="example-title">Проект Boxes</h2>
+              <p class="example-text">Приложение</p>
+            </a>
           </li>
           <li>
-            <img src="/images/macproportfolio.jpg" alt="MacPro" /><a
-              href=""
-            ></a>
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <a href="">
+              <img src="/images/macproportfolio.jpg" alt="MacPro" />
+              <h2 class="example-title">Inspiration has no Borders</h2>
+              <p class="example-text">Веб-сайт</p>
+            </a>
           </li>
           <li>
-            <img src="/images/book.jpg" alt="Книжка" /><a href=""></a>
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
+            <a href="">
+              <img src="/images/book.jpg" alt="Книжка" />
+              <h2 class="example-title">Издание Limited Edition</h2>
+              <p class="example-text">Дизайн</p>
+            </a>
           </li>
           <li>
-            <img src="/images/birka.jpg" alt="Бірка на шнурку" /><a href=""></a>
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
+            <a href="">
+              <img src="/images/birka.jpg" alt="Бірка на шнурку" />
+              <h2 class="example-title">Проект LAB</h2>
+              <p class="example-text">Маркетинг</p>
+            </a>
           </li>
           <li>
-            <img src="/images/macbookwork.jpg" alt="Працюють за макбуком" /><a
-              href=""
-            ></a>
-            <h2>Growing Business</h2>
-            <p>Приложение</p>
+            <a href="">
+              <img src="/images/macbookwork.jpg" alt="Працюють за макбуком" />
+              <h2 class="example-title">Growing Business</h2>
+              <p class="example-text">Приложение</p>
+            </a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="">Web Studio</a>
-      <address>
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-        <a href="tel:+380961111111">+38 099 111 11 11</a>
+    <footer class="page-footer">
+      <a href="" class="logo">
+        <span class="logo-blue">Web</span>
+        <span class="logo-black">Studio</span>
+      </a>
+      <address class="navigation">
+        <span class="text-nav"> г. Киев, пр-т Леси Украинки, 26</span>
+        <br />
+        <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+        <br />
+        <a href="tel:+380961111111" class="phone-number">+38 099 111 11 11</a>
       </address>
-      <h3>присоединяйтесь</h3>
-      <ul>
-        <li>
+      <h3 class="text-nav">присоединяйтесь</h3>
+      <ul class="items">
+        <li class="items-icon">
           <a href="https://www.instagram.com/?hl=uk"
             ><img src="./images/instagram3.svg" alt="Instagram"
           /></a>
         </li>
-        <li>
+        <li class="items-icon">
           <a href="https://twitter.com/explore"
             ><img src="./images/twitter.svg" alt="Twitter"
           /></a>
         </li>
-        <li>
+        <li class="items-icon">
           <a href="https://uk-ua.facebook.com"
             ><img src="./images/facebook.svg" alt="Facebook"
           /></a>
         </li>
-        <li>
+        <li class="items-icon">
           <a href="https://www.linkedin.com"
             ><img src="./images/linkedin.svg" alt="linkedin"
           /></a>
         </li>
       </ul>
-      <hr />
-      <h6>2020 | Developed by GoIT Students</h6>
+      <section>
+        <h3 class="title-nav">Подпишитесь на рассылку</h3>
+        <button class="btn-footer">Подписаться</button>
+      </section>
+      <h6 class="desc">2020 | Developed by GoIT Students</h6>
     </footer>
   </body>
 </html>
