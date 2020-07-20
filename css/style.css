@@ -15,7 +15,7 @@
 :root {
   --title-text-color: #212121;
   --primary-text-color: #757575;
-  --secondary-text-color: #ffffff;
+  /*--secondary-text-color: #ffffff;*/
 
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
@@ -93,12 +93,12 @@ h3 {
 
 .communication .mail:hover,
 .communication .mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .communication .phone-number:hover,
 .communication .phone-number:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Hero  */
@@ -187,7 +187,7 @@ h3 {
 
 .text-nav,
 .title-nav {
-  color: var(--secondary-text-color);
+  color: var(--primary-white-color);
 }
 
 .navigation .phone-number,
@@ -197,12 +197,12 @@ h3 {
 
 .navigation .mail:hover,
 .navigation .mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .navigation .phone-number:hover,
 .navigation .phone-number:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .items .items-icon:hover,
